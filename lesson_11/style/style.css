@@ -23,7 +23,7 @@ nav{
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-items: center;
+    /*align-items: center;*/
     font-size: 14px;
     border-radius: 8px;
     background: #F4D3D3;
@@ -31,20 +31,23 @@ nav{
 }
 .menu{
     font-family: "Arial Bkack", sans-serif;
+    font-weight: 900;
     padding: 10px;
     display: block;
 }
 nav ul li{
-    padding: 6px 0;
+    /*padding: 6px 0;*/
     color: #006EBE;
-}
-.nav li{
-    padding: 6px 0;
-    display: block;
+    padding: 0;
     width: 100%;
 }
-.nav > li:hover{
-    background: #FFFFFFFF;
+nav li a{
+    display: block;
+    padding: 6px 0;
+    width: 100%;
+}
+nav li:hover{
+    background: #FFF;
 }
 :link{
     color: #006EBE;
@@ -68,6 +71,7 @@ main{
 .date{
     background: #E9E9E9;
     padding: 8px;
+    margin-bottom: 16px;
     border-radius: 8px;
     display: flex;
     column-gap: 6px;
@@ -83,11 +87,12 @@ h1 {
 .info{
     display: flex;
     flex-direction: column;
-    column-gap: 8px;
+    /*column-gap: 8px;*/
 }
-.info h2, .movie h2{
+h2{
     font-size: 18px;
     font-weight: 900;
+    margin-bottom: 8px;
 }
 figure{
     background: #F4D3D3;
@@ -103,9 +108,8 @@ figcaption{
     padding: 10px 0;
 }
 .movie ol li{
-    padding: 10px;
+    padding: 10px 10px 10px 30px;
     border-bottom: 1px solid #C9A5AA;
-    padding-left: 30px;
 }
 ol > li::before{
     content: counter(list-item) ".";
@@ -126,4 +130,15 @@ footer{
     padding: 16px;
     border-radius: 0 0 8px 8px;
     background: #F4D3D3;
+}
+
+
+@media (min-width: 620px) {
+nav li{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (min-width: 820px) {
+
 }
